@@ -20,8 +20,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if (config('database.allow_migrations') === false) {
-            Schema::disableMigrations();
-        }
+        //
     }
 }
